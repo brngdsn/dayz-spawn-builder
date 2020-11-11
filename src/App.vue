@@ -252,7 +252,7 @@ export default {
     const appVersion = process.env.PACKAGE_VERSION
     return {
       appVersion,
-      selectionChildren: null,
+      selectedChildren: null,
       children: ['mixed', 'child', 'custom'],
       selectedPosition: null,
       positions: ['fixed', 'player'],
@@ -282,7 +282,7 @@ export default {
   margin: 25px;
   padding: 25px;
 }
-h1 {
+#app > h1 {
   font-size: 40px;
   margin-bottom: 15px;
 }
