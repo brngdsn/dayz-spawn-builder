@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Spawn Builder</h1>
+    <h1>DayZ Spawn Builder</h1>
 
     <b-input
       placeholder="E.g., NPCEagleScout"
