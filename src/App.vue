@@ -167,6 +167,10 @@
 
     <br />
 
+    <span style="font-size:10px;opacity:.5;">
+      DayZ Spawn Builder <a href="https://github.com/brngdsn/dayz-spawn-builder">v{{appVersion}}</a> by <a href="https://twitter.com/brngdsn">@brngdsn</a>
+    </span>
+
     <!-- <pre>data={{ $data }}</pre> -->
 
   </div>
@@ -245,7 +249,9 @@ export default {
         value: "Infected",
       }
     ];
+    const appVersion = process.env.PACKAGE_VERSION
     return {
+      appVersion,
       selectionChildren: null,
       children: ['mixed', 'child', 'custom'],
       selectedPosition: null,
@@ -259,6 +265,9 @@ export default {
       eventTypes,
     };
   },
+  mounted(){
+    document.title = `DayZ Spawn Builder v${this.appVersion}`
+  }
 };
 </script>
 
