@@ -30,7 +30,7 @@
         <b-radio
           v-model="selectedLootType"
           name="name"
-          native-value="attachment"
+          native-value="attachments"
         >
           Attachments
         </b-radio>
